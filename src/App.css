@@ -1,10 +1,55 @@
-.App {
-  text-align: center;
+* {
+  font-family: 'Playfair Display', serif;
 }
 
-.App-logo {
-  height: 40vmin;
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+nav {
+  width:100%;
+}
+
+.jumbotron {
+  width: 100vw;
+}
+
+.card:hover{
+  box-shadow: 0 10px 15px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+  transform: translateY(-5px) scale(1.005);
+  transition-duration: .4s;
+}
+
+.card-title {
+  font-weight: bold;
+  color: midnightblue;
+
+}
+
+.card-title h5{
+  font-size: 4rem;
+}
+
+.idLabel {
+  position: absolute;
+  top: 0px;
+  left: 8px;
+  font-size: 3rem;
+  background-color: none;
+  color: #282c34;
+}
+
+#genderForm {
+  width: 83% !important;
+}
+#genderForm:focus {
+  outline:none !important;
+  box-shadow:none;
+}
+
 
 .App-header {
   background-color: #282c34;
@@ -17,6 +62,14 @@
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+
+.userNavbar {
+  position: absolute;
+  left: 43vw;
+}
+
+.toast {
+  position: fixed;
+  top: 100px;
+  left: 0;
 }
